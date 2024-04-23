@@ -38,7 +38,6 @@ pip install ipdb
 # Development/Research Related
 sudo apt install gdb
 pip install pwntools
-sudo apt install pwndbg
 sudo snap install rustup
 
 # TODO: - Take care of p10k and fzf configuration at /usr/share/doc/fzf/examples/key-bindings.zsh
