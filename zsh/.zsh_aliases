@@ -42,7 +42,7 @@ alias gcm="git commit -m $1"
 alias gdiscard="git reset HEAD --hard"
 
 # diff-all is currently problematic
-# alias diff-all="for name in $(git diff --name-only $1); git difftool -y $1 $name"
+alias diff-all="for name in $(git diff --name-only $1); git difftool -y $1 $name"
 alias diff-changes="git diff --name-status -r"
 alias diff-stat="git diff --stat --ignore-space-change -r"
 alias diff-staged="git diff --cached"
