@@ -3,7 +3,7 @@
 # Install and preconfigure packages
 
 # Setup
-mkdir -p $HOME/.Downloads
+mkdir -p ~/.Downloads
 
 # Essentials
 sudo apt install git
@@ -17,9 +17,22 @@ sudo apt install fzf
 sudo apt install exa
 sudo apt install ncdu
 sudo apt install libfuse2
-sudo apt install tmux && sudo ln -s $HOME/.config/tmux/tmux.conf $HOME/.tmux.conf
+sudo apt install tmux && sudo ln -s ~/.config/tmux/tmux.conf ~/.tmux.conf
 sudo apt install bat
 sudo apt install ripgrep
+
+# ZSH
+echo '''# Profile file. Runs on login. Environment variables are set here.
+
+# Default programs
+export EDITOR="nvim"
+
+# Removing clutter from home dir
+export ZDOTDIR="$HOME/.config/zsh"
+
+. "$HOME/.cargo/env"''' > ~/.zprofile
+ln -s ~/.zprofile ~/.profile
+chsh -s $(which zsh)
 
 # Neovim
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
@@ -48,5 +61,5 @@ sudo snap install rustup
 # Cleanup
 sudo apt autoremove
 
-# Run 'exec zsh', then 'p10k configure', then 'sudo vim /etc/passwd and change your terminal to /usr/bin/zsh.
+# Run 'exec zsh', then 'p10k configure'.
 
