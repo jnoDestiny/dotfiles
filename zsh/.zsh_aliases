@@ -23,6 +23,9 @@ alias vim="nvim"
 alias zshrc="vim $ZSH/.zshrc"
 alias tconf="vim ~/.config/tmux/tmux.conf"
 
+# tmux
+alias tmux="tmux -u" # Explicitly inform tmux that UTF-8 is supported
+
 # python
 alias ipython="ipython3"
 
@@ -39,6 +42,7 @@ alias gco="git checkout"
 alias gsts="git stash"
 alias gstsp="git stash pop"
 alias gcm="git commit -m $1"
+alias grh="git reset HEAD --hard"
 alias gdiscard="git reset HEAD --hard"
 
 # diff-all is currently problematic
