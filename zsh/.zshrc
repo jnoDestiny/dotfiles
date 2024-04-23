@@ -48,7 +48,7 @@ source $ZSH/plugins/zsh-you-should-use/zsh-you-should-use.plugin.zsh
 source $ZSH/themes/powerlevel10k/powerlevel10k.zsh-theme
 
 # Rust
-. "$HOME/.cargo/env"
+test -f "$HOME/.cargo/env" && . "$HOME/.cargo/env"
 
 # ZSH Autocomplete
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8"
