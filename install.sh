@@ -6,6 +6,7 @@
 sudo apt install git
 sudo apt install python3
 sudo apt install pip
+pip install --upgrade pip
 python3 -m pip install IPython
 
 # Configuration essentials
