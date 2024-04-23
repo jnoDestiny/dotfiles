@@ -28,8 +28,20 @@ export EDITOR="nvim"
 export ZDOTDIR="$HOME/.config/zsh"
 
 . "$HOME/.cargo/env"''' > ~/.zprofile
+echo '''#Default programs
+export EDITOR="nvim"
+
+# Removing clutter from home dir
+export ZDOTDIR="$HOME/.config/zsh"
+
+source $HOME/.config/.zshenv
+
+. "$HOME/.cargo/env"''' > ~/.zshenv
+rm ~/.profile
 ln -s ~/.zprofile ~/.profile
 chsh -s $(which zsh)
+mkdir -p ~/.cache/zsh
+test -f ~/.cache/zsh/history || touch ~/.cache/zsh/history
 
 # Neovim
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
@@ -52,8 +64,8 @@ sudo snap install rustup
 
 # TODO: - Take care of p10k and fzf configuration at /usr/share/doc/fzf/examples/key-bindings.zsh
 #       - Look into Meson for installation of radare2
-#       - Add a WSL flag to set appendWindowPath = false in /etc/wsl.conf
-#       - Add a CTF flag
+#       - Add a WSL flag to set appendWindowPath = false in /etc/wsl.conf and keybindings in tmux.conf and zshrc
+#       - Add a flag for research-related stuff
 
 # Installation cleanup
 sudo apt autoremove
