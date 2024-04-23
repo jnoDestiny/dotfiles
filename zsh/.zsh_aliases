@@ -13,9 +13,10 @@ alias lS='exa -1' # one column by just names
 # cd
 alias ..="cd .."
 alias ...="cd ../.."
+alias ....="cd ../../.."
 
 # bat
-#alias cat="batcat"
+alias bat="batcat"
 
 # nvim
 alias vim="nvim"
@@ -27,3 +28,24 @@ alias ipython="ipython3"
 
 # WSL
 alias dzi="find . -name '*:Zone.Identifier' -type f -delete"
+
+# Git
+alias gst="git status"
+alias ga="git add"
+alias gf="git fetch"
+alias gl="git pull"
+alias gp="git push"
+alias gco="git checkout"
+alias gsts="git stash"
+alias gstsp="git stash pop"
+alias gcm="git commit -m $1"
+alias gdiscard="git reset HEAD --hard"
+
+# diff-all is currently problematic
+# alias diff-all="for name in $(git diff --name-only $1); git difftool -y $1 $name"
+alias diff-changes="git diff --name-status -r"
+alias diff-stat="git diff --stat --ignore-space-change -r"
+alias diff-staged="git diff --cached"
+alias diff-upstream="git fetch origin && git diff main origin/main"
+alias diff-words="git diff --color-words='[^[:space:]]|([[:alnum:]]|UTF_8_GUARD)+'"
+

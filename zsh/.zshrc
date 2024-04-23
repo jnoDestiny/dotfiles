@@ -20,6 +20,9 @@ export PATH="$PATH:/mnt/c/Users/User/AppData/Local/Microsoft/WindowsApps"
 export PATH="$PATH:/mnt/c/Users/User/AppData/Local/Programs/Microsoft VS Code/bin"
 export PATH="$PATH:/mnt/c/WINDOWS"
 
+# Adding Neovim to PATH
+export PATH="$PATH:/opt/nvim/"
+
 # History in cache directory
 HISTSIZE=9999
 SAVEHIST=9999
@@ -31,17 +34,21 @@ setopt HIST_FIND_NO_DUPS
 bindkey -v
 export KEYTIMEOUT=1
 
-# Keybindings
+# ZSH Keybindings
+# Ctrl + Arrows for words
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 
 # Plugins
-source $ZSH/plugins/fast-syntax-highlighting/F-Sy-H.plugin.zsh
+source $ZSH/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 source $ZSH/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 source $ZSH/plugins/zsh-you-should-use/zsh-you-should-use.plugin.zsh
 
 # Themes
 source $ZSH/themes/powerlevel10k/powerlevel10k.zsh-theme
+
+# Rust
+# . "$HOME/.cargo/env"
 
 # ZSH Autocomplete
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8"
