@@ -2,9 +2,6 @@
 
 # Install and preconfigure packages
 
-# Setup
-mkdir -p ~/.Downloads
-
 # Essentials
 sudo apt install git
 sudo apt install python3
@@ -58,8 +55,13 @@ sudo snap install rustup
 #       - Add a WSL flag to set appendWindowPath = false in /etc/wsl.conf
 #       - Add a CTF flag
 
-# Cleanup
+# Installation cleanup
 sudo apt autoremove
 
-# Run 'exec zsh', then 'p10k configure'.
+# Setup
+cd ~/.config
+git submodule init
+git pull --recurse-submodules
+
+exec zsh
 
