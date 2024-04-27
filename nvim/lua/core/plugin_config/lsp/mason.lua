@@ -20,7 +20,7 @@ mason_lspconfig.setup({
     },
 })
 
-# TODO: Make these work
+-- TODO: Make these work
 mason_tool_installer.setup({
     ensure_installed = {
     "prettier",
