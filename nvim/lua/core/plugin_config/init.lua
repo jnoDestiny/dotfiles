@@ -11,4 +11,5 @@ require("core.plugin_config.nvim-surround")
 require("core.plugin_config.leap")
 -- require("core.plugin_config.vim-illuminate")
 require("core.plugin_config.nvim-neoclip")
+require("core.plugin_config.cmp")
 

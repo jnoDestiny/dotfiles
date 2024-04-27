@@ -27,7 +27,18 @@ return require('packer').startup(function(use)
             'nvim-tree/nvim-web-devicons',
         }
     }
-    use {'stevearc/dressing.nvim', event = 'VeryLazy'}
+    use {'stevearc/dressing.nvim'}
+    use {
+        'hrsh7th/nvim-cmp',
+        -- event = 'InsertEnter',
+        requires = {
+            'hrsh7th/cmp-buffer',
+            'hrsh7th/cmp-path',
+            'L3MON4D3/LuaSnip',
+            'saadparwaiz1/cmp_luasnip', 
+            'rafamadriz/friendly-snippets',
+        },
+    }
     use 'numToStr/Comment.nvim'
     use 'lukas-reineke/indent-blankline.nvim'
     use 'lewis6991/gitsigns.nvim'
