@@ -1,7 +1,7 @@
 require('lualine').setup {
     options = {
         icons_enabled = true,
-        theme = 'gruvbox',
+        theme = 'monokai-pro',
     },
     sections = {
         lualine_a = {
@@ -12,3 +12,4 @@ require('lualine').setup {
         }
     }
 }
+

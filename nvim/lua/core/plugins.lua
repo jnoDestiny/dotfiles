@@ -14,6 +14,7 @@ local packer_bootstrap = ensure_packer()
 return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
     use 'ellisonleao/gruvbox.nvim'
+    use 'loctvl842/monokai-pro.nvim'
     use 'nvim-tree/nvim-tree.lua'
     use 'nvim-lualine/lualine.nvim'
     use 'nvim-treesitter/nvim-treesitter'
@@ -36,6 +37,11 @@ return require('packer').startup(function(use)
         requires = {
             {'nvim-telescope/telescope.nvim'},
         }
+    }
+    use {
+        "williamboman/mason.nvim",
+        "williamboman/mason-lspconfig.nvim",
+        "neovim/nvim-lspconfig",
     }
 
     -- Automatically set up your configuration after cloning packer.nvim

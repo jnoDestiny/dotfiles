@@ -84,11 +84,6 @@ _G.packer_plugins = {
     path = "/home/shiki/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
-  ["gruvbox.nvim"] = {
-    loaded = true,
-    path = "/home/shiki/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
-    url = "https://github.com/ellisonleao/gruvbox.nvim"
-  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/home/shiki/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
@@ -103,6 +98,26 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/shiki/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["mason-lspconfig.nvim"] = {
+    loaded = true,
+    path = "/home/shiki/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
+    url = "https://github.com/williamboman/mason-lspconfig.nvim"
+  },
+  ["mason.nvim"] = {
+    loaded = true,
+    path = "/home/shiki/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["monokai-pro.nvim"] = {
+    loaded = true,
+    path = "/home/shiki/.local/share/nvim/site/pack/packer/start/monokai-pro.nvim",
+    url = "https://github.com/loctvl842/monokai-pro.nvim"
+  },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/home/shiki/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-neoclip.lua"] = {
     loaded = true,
