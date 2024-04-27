@@ -39,10 +39,14 @@ export KEYTIMEOUT=1
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 
+# Enable colored man pages
+autoload -U colors && colors
+
 # Plugins
 source $ZSH/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 source $ZSH/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 source $ZSH/plugins/zsh-you-should-use/zsh-you-should-use.plugin.zsh
+source $ZSH/plugins/colored-man-pages/colored-man-pages.plugin.zsh
 
 # Themes
 source $ZSH/themes/powerlevel10k/powerlevel10k.zsh-theme
