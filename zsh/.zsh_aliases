@@ -46,7 +46,11 @@ alias grh="git reset HEAD --hard"
 alias gdiscard="git reset HEAD --hard"
 
 # diff-all is currently problematic
-alias diff-all="for name in $(git diff --name-only $1); git difftool -y $1 $name"
+diff-all() {
+    for name in $(git diff --name-only $1); do
+        git difftool -y $1 $name
+    done
+}
 alias diff-changes="git diff --name-status -r"
 alias diff-stat="git diff --stat --ignore-space-change -r"
 alias diff-staged="git diff --cached"
