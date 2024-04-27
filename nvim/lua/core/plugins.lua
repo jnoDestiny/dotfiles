@@ -58,6 +58,11 @@ return require('packer').startup(function(use)
         "williamboman/mason.nvim",
         "williamboman/mason-lspconfig.nvim",
         "neovim/nvim-lspconfig",
+        "WhoIsSethDaniel/mason-tool-installer.nvim",
+    }
+    use {
+        "jose-elias-alvarez/null-ls.nvim",
+        "MunifTanjim/prettier.nvim",
     }
 
     -- Automatically set up your configuration after cloning packer.nvim
