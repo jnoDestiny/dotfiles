@@ -7,3 +7,6 @@ rpyc.egg-info
 # Irrelevant configurations
 binwalk/
 
+# Compiled configurations
+nvim/plugin/packer_compiled.lua
+

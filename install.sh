@@ -8,10 +8,14 @@ sudo apt install python3
 sudo apt install pip
 pip install --upgrade pip
 python3 -m pip install IPython
+sudo apt install make
+sudo apt install gcc
+sudo apt install cmake
 
 # Configuration essentials
 sudo apt install zsh
 sudo apt install fzf
+sudo apt install fd-find
 sudo apt install exa
 sudo apt install ncdu
 sudo apt install libfuse2
@@ -61,6 +65,8 @@ pip install ipdb
 # Development/Research Related
 sudo apt install gdb
 pip install pwntools
+# Uncomment if using WSL
+# curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 sudo snap install rustup
 
 # TODO: - Take care of p10k and fzf configuration at /usr/share/doc/fzf/examples/key-bindings.zsh
@@ -77,4 +83,8 @@ git submodule init
 git pull --recurse-submodules
 
 exec zsh
+
+# TODO: Call PackerSync in vim (use vimscript?) and then:
+# cd ~/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim
+# cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build
 
