@@ -27,6 +27,7 @@ return require('packer').startup(function(use)
             'nvim-tree/nvim-web-devicons',
         }
     }
+    use {'stevearc/dressing.nvim', event = 'VeryLazy'}
     use 'numToStr/Comment.nvim'
     use 'lukas-reineke/indent-blankline.nvim'
     use 'lewis6991/gitsigns.nvim'
