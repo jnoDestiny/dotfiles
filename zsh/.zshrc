@@ -39,6 +39,10 @@ export KEYTIMEOUT=1
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 
+# Case insensitive autocompletion
+autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+
 # Enable colored man pages
 autoload -U colors && colors
 

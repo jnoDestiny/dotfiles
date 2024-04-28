@@ -67,6 +67,7 @@ sudo apt install gdb
 pip install pwntools
 # Uncomment if using WSL
 # curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+# Uncomment if using Ubuntu without WSL
 sudo snap install rustup
 
 # TODO: - Take care of p10k and fzf configuration at /usr/share/doc/fzf/examples/key-bindings.zsh
