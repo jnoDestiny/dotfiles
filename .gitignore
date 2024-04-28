@@ -9,4 +9,6 @@ binwalk/
 
 # Compiled configurations
 nvim/plugin/packer_compiled.lua
+zsh/.zshenv
+zsh/.zcompdump
 
