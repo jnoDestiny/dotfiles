@@ -65,6 +65,7 @@ pip install ipdb
 # Development/Research Related
 sudo apt install gdb
 pip install pwntools
+git config --global core.pager 'less --mouse --wheel-lines=3'
 # Uncomment if using WSL
 # curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 # Uncomment if using Ubuntu without WSL
