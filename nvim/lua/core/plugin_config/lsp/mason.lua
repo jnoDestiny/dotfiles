@@ -16,20 +16,20 @@ mason_lspconfig.setup({
     -- servers to install
     ensure_installed = {
     "lua_ls",
-    "pyright",
+    -- "pyright",
     },
 })
 
 -- TODO: Make these work
-mason_tool_installer.setup({
-    ensure_installed = {
-    "prettier",
-    "stylua", -- lua
-    "isort", -- python
-    "black", -- python
-    "pylint",
-    },
-
-    automatic_installation = true,
-})
+-- mason_tool_installer.setup({
+--     ensure_installed = {
+--     "prettier",
+--     "stylua", -- lua
+--     "isort", -- python
+--     "black", -- python
+--     "pylint",
+--     },
+--
+--     automatic_installation = true,
+-- })
 
