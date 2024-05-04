@@ -1,0 +1,4 @@
+wtol() {
+    echo $1 | sed -e 's/C:\\/mnt\/c\//;s/\\/\//g'
+}
+

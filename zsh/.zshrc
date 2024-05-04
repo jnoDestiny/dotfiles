@@ -7,13 +7,18 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+function source_if_exists() {
+    if [ -e $1 ]; then
+	. $1
+    fi
+}
+
 # Setting ZSH homedir
 export ZSH="$HOME/.config/zsh"
 
 # Adding custom aliases
-if [ -e $ZSH/.zsh_aliases ]; then
-    . $ZSH/.zsh_aliases
-fi
+source_if_exists $ZSH/.zsh_aliases
+source_if_exists $ZSH/.zsh_utils
 
 # Adding Windows directories back since appendWindowsPath = false is written in /etc/wsl.conf
 export PATH="$PATH:/mnt/c/Users/User/AppData/Local/Microsoft/WindowsApps"
@@ -61,11 +66,6 @@ test -f "$HOME/.cargo/env" && . "$HOME/.cargo/env"
 # ZSH Autocomplete
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8"
 
-function source_if_exists() {
-    if [ -e $1 ]; then
-	source $1
-    fi
-}
 # Custom utilities sourcing
 source_if_exists /usr/share/doc/fzf/examples/key-bindings.zsh
 
