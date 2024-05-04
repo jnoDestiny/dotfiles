@@ -8,6 +8,8 @@ sudo apt install python3
 sudo apt install pip
 pip install --upgrade pip
 python3 -m pip install IPython
+sudo apt install ipython3
+sudo apt install python-is-python3
 sudo apt install make
 sudo apt install gcc
 sudo apt install cmake
