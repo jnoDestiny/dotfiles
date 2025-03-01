@@ -12,3 +12,6 @@ nvim/plugin/packer_compiled.lua
 zsh/.zshenv
 zsh/.zcompdump
 
+# Utility configurations
+lazygit/
+
