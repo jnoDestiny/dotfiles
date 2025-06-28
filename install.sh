@@ -51,10 +51,10 @@ mkdir -p ~/.cache/zsh
 test -f ~/.cache/zsh/history || touch ~/.cache/zsh/history
 
 # Neovim
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
-chmod u+x nvim.appimage
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.appimage
+chmod u+x nvim-linux-x86_64.appimage
 sudo mkdir -p /opt/nvim
-sudo mv nvim.appimage /opt/nvim/nvim
+sudo mv nvim-linux-x86_64.appimage /opt/nvim/nvim
 
 # Lazygit
 LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | \grep -Po '"tag_name": *"v\K[^"]*')
