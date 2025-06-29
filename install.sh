@@ -72,6 +72,9 @@ pip install git-filter-repo
 pip install autopep8
 pip install ipdb
 
+# UV
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
 # Development/Research Related
 sudo apt install gdb
 pip install pwntools
